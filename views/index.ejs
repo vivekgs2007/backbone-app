@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Building Backbone App</title>
+		
+			<style>
+			.author{
+				text-decoration: underline;
+				font-weight: bold;
+			}
+			.focused{
+				border: 1px solid #62627E;
+			}
+			</style>
+
+	</head>
+	<body>
+		<h1>Backbone App Twitter</h1>
+
+		<form id="new-tweet">
+			<label>Author: </label>
+			<input id="author-name" name="author-name" type="text">
+			<label>Status: </label>
+			<input id="status-update" name="status-update" type="text">
+			<input type="submit" value="Post">
+		</form>
+
+		<hr/>
+
+		<div id="tweets-container"></div>
+		<script type="text/javascript" src="./javascripts/jquery.js"></script>
+		<script type="text/javascript" src="./javascripts/underscore.js"></script>
+		<script type="text/javascript" src="./javascripts/backbone.js"></script>
+		<script type="text/javascript" src="./javascripts/static.js"></script>
+		<script type="text/template" id="tweet-template">
+			<span class="author"> {{ author }}</span>
+			<span class="status"> {{ status }}</span>
+			<a href="#" class="edit">[Edit]</a>
+			<a href="#" class="delete">[Delete]</a>
+		</script>
+		
+	</body>
+</html>
