@@ -1,7 +1,7 @@
 backbone-app
 ============
 
-Prerequest:
+Prerequisite:
 
 1. Node.js with npm
 2. MongoDB
